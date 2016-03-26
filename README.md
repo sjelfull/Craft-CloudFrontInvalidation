@@ -15,7 +15,7 @@ CloudFront invalidation works on Craft 2.4.x and Craft 2.5.x, and requires PHP 5
 
 ## Configuring
 
-The plugin will use the S3 key/secret define in your Asset Source settings, but you need to provide the CloudFront Distribution ID. You can get it from [the AWS Console](https://console.aws.amazon.com/cloudfront/home)
+The plugin will use the S3 key/secret defined in your Asset Source settings, but you need to provide the CloudFront Distribution ID. You can get it from [the AWS Console](https://console.aws.amazon.com/cloudfront/home)
 
 ## Roadmap
 
