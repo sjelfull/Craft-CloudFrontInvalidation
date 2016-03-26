@@ -1,6 +1,6 @@
 # CloudFront Invalidation plugin for Craft CMS
 
-Invalidate the CloudFront cache for one or more assets from the toolbar.
+Invalidate the CloudFront cache for your assets from the toolbar.
 
 ## Installation
 
