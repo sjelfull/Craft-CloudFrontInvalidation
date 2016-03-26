@@ -1,0 +1,24 @@
+{#
+/**
+ * CloudFront invalidation plugin for Craft CMS
+ *
+ * CloudFront invalidation Settings.twig
+ *
+ * @author    Fred Carlsen
+ * @copyright Copyright (c) 2016 Fred Carlsen
+ * @link      http://sjelfull.no
+ * @package   CloudfrontInvalidation
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    label: 'CloudFront Distribution ID',
+    instructions: 'You can find the distribution ID in <a href="https://console.aws.amazon.com/cloudfront/home" target="_blank">the AWS console</a>',
+    id: 'distributionId',
+    name: 'distributionId',
+    placeholder: 'xxxxxxxxxxxxx',
+    value: settings['distributionId']})
+}}
