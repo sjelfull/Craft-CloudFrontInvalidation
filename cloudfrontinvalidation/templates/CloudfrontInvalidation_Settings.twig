@@ -22,3 +22,11 @@
     placeholder: 'xxxxxxxxxxxxx',
     value: settings['distributionId']})
 }}
+
+{{ forms.textField({
+    label: 'Override asset menu option label',
+    instructions: 'This will override the default label used in the assets section. This can be useful for making the option more meaningful for editors.',
+    id: 'assetMenuLabelOverride',
+    name: 'assetMenuLabelOverride',
+    value: settings['assetMenuLabelOverride']})
+}}

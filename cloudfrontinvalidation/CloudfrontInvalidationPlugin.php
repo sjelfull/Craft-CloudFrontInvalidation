@@ -121,7 +121,15 @@ class CloudfrontInvalidationPlugin extends BasePlugin
     protected function defineSettings()
     {
         return array(
-            'distributionId' => array(AttributeType::String, 'label' => 'CloudFront Distribution ID', 'default' => ''),
+                'distributionId' => array(AttributeType::String, 
+                'label' => 'CloudFront Distribution ID', 
+                'default' => ''
+            ),
+
+                'assetMenuLabelOverride' => array(AttributeType::String, 
+                'label' => 'Override asset menu option label', 
+                'default' => ''
+            ),
         );
     }
 
