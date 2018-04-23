@@ -11,11 +11,16 @@ To install CloudFront invalidation, follow these steps:
 3. Install plugin in the Craft Control Panel under Settings > Plugins
 4. The plugin folder should be named `cloudfrontinvalidation` for Craft to see it.  GitHub recently started appending `-master` (the branch name) to the name of the folder for zip file downloads.
 
-CloudFront invalidation works on Craft 2.4.x and Craft 2.5.x, and requires PHP 5.4.* or higher.
+CloudFront invalidation works on Craft 2.4.x, Craft 2.5.x and Craft 2.6.x, and requires PHP 5.4.* or higher.
 
 ## Configuring
 
-The plugin will use the S3 key/secret defined in your Asset Source settings, but you need to provide the CloudFront Distribution ID. You can get it from [the AWS Console](https://console.aws.amazon.com/cloudfront/home)
+The plugin will use the S3 key/secret defined in your Asset Source settings, but you need to provide the CloudFront Distribution ID. You can get it from [the AWS Console](https://console.aws.amazon.com/cloudfront/home).
+
+You will also need to ensure that the IAM user has the follow policies set to allow:
+
+* `cloudfront:CreateInvalidation`
+* `cloudfront:ListInvalidations`
 
 ## Roadmap
 
