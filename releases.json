@@ -1,5 +1,15 @@
 [
     {
+        "version": "1.0.1",
+        "downloadUrl": "https://github.com/sjelfull/Craft-CloudFrontInvalidation/archive/master.zip",
+        "date": "2018-04-23T12:21:50.108Z",
+        "notes": [
+            "[Improved] Make CloudFront Distribution ID a required field",
+            "[Improved] Allow to override the label for the menu options in assets section",
+            "[Improved] Tweaks"
+        ]
+    },
+    {
         "version": "1.0.0",
         "downloadUrl": "https://github.com/sjelfull/Craft-CloudFrontInvalidation/archive/master.zip",
         "date": "2016-03-24T12:21:50.108Z",
