@@ -17,8 +17,10 @@
 {{ forms.textField({
     label: 'CloudFront Distribution ID',
     instructions: 'You can find the distribution ID in <a href="https://console.aws.amazon.com/cloudfront/home" target="_blank">the AWS console</a>',
+    required: true,
     id: 'distributionId',
     name: 'distributionId',
     placeholder: 'xxxxxxxxxxxxx',
-    value: settings['distributionId']})
+    value: settings['distributionId'],
+    errors: settings.getErrors('distributionId')})
 }}
