@@ -5,7 +5,11 @@ class CloudfrontInvalidation_InvalidateElementAction extends BaseElementAction
 {
     public function getName()
     {
-        return Craft::t('Invalidate CloudFront cache');
+        $pluginSettings = craft()->plugins->getPlugin('cloudfrontinvalidation')->getSettings();
+        $assetMenuLabel = Craft::t('Invalidate CloudFront cache');
+        $assetMenuLabelOverride = $pluginSettings->assetMenuLabelOverride;
+
+        return ($assetMenuLabelOverride) ? $assetMenuLabelOverride : $assetMenuLabel;
     }
 
     public function performAction(ElementCriteriaModel $criteria)
